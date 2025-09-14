@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  client:
+    build: .
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - DOCKER=true
+    command: npm run dev:docker
