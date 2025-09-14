@@ -18,7 +18,7 @@ import {
 } from '@mui/icons-material';
 import type { Campaign, Voucher } from '../types';
 import { apiService } from '../services/api';
-import VouchersTable from './vouchersTable';
+import VouchersTable from './VouchersTable';
 
 interface VoucherManagementProps {
 	campaign: Campaign;
