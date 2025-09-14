@@ -47,7 +47,7 @@ function VouchersTable({
 }: VouchersTableProps) {
     if (loading) {
         return (
-            <Box mt={3} sx={{ display: 'flex', justifyContent: 'center', minHeight: '400px', alignItems: 'center' }}>
+            <Box mt={3} sx={{ display: 'flex', justifyContent: 'center', height: 'calc(100vh - 500px);', alignItems: 'center' }}>
                 <CircularProgress />
             </Box>
         )
@@ -55,7 +55,7 @@ function VouchersTable({
 
     return (
         <>
-            <TableContainer component={Paper} sx={{ height: '400px', width: '100%' }}>
+            <TableContainer component={Paper} sx={{ height: 'calc(100vh - 500px);', width: '100%' }}>
 				<Table>
 					<TableHead>
 						<TableRow>
